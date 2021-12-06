@@ -1,0 +1,178 @@
+doctype html
+html(lang="en")
+    head
+        include components/mixins
+        include components/vars
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="viewport", content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0")
+        title Document
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lobster&family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+        link(rel="stylesheet", href="css/styles.css")
+        
+    body
+        .header.conteiner-fluid
+            .container
+                .py-5.my-5.d-flex.justify-content-between.adapt
+                    .logo 
+                        img.logo(src="img/logo.png" alt="логотип") 
+                        | trips
+                    .header-menu
+                        ul.menu 
+                            li.a(href="#") ГОЛОВНА
+                            li.a(href="#") ПОСЛУГИ
+                            li.a(href="#") ПРО КОМПАНІЮ
+                            li.a(href="#") АКЦІЇ
+                            li.a(href="#") ПАРТНЕРИ
+                            li.a(href="#") ВІДГУКИ
+                            li.a(href="#") КОНТАКТИ
+                .py-5.my-5.sea 
+                    .pt-5.div.rectangle-one 
+                    h1.py-5 МОРСЬКІ ПРИГОДИ
+                    .text.white.pb-5 Не важливо, чи Ваша мандрівка належить до елітного рівня чи до <br> економваріанту, туроператор S trips потурбується, щоб Ви залишились <br> задоволеними!
+                    .button.but(type="button" class="btn btn-primary btn-lg") ДЕТАЛЬНІШЕ
+                    .div.rectangle-two 
+                .py-5.sea-buttom
+                    h2.py-5 ОБЕРИ СВІЙ <br> ПЛАН ПОДОРОЖІ
+                    .text.dark.text-center Наша фірма -лідер на ринку у своїй сфері
+                .py-5.arr    
+                    img.a.arrow.pb-5(href="#" src="img/arrow.png" alt="стрелка") 
+        .content.conteiner-fluid
+            .container
+                .row.info 
+                    .col-3
+                        div.company
+                            .card_one ПРО НАШУ КОМПАНІЮ
+                            .text.sub-title Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень! 
+                            .button.but(type="button" class="btn btn-primary btn-sm") ДЕТАЛЬНІШЕ    
+                    .col-9
+                        .row
+                            .col-4.card    
+                                div.card_two 
+                                    img.bicycle.py-5(src="img/bicycle.png" alt="велосипед")
+                                    .text.card-text Тур на велосипедах
+                                    .price 335 грн*
+                                    .text.fn Подорожуючи  на велосипеді, ви поринете в атмосферу мальовничих гір, чарівнмх краєвидів та шалених пригод.
+                            .col-4.card
+                                div.card_three 
+                                    img.round.py-5(src="img/round.png" alt="коло")
+                                    .text.card-text Екскурсія на острів
+                                    .price 500 грн*
+                                    .text.fn Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса  у будь-яку пору року.
+                            .col-4.card    
+                                div.card_four
+                                    img.fotos.py-5(src="img/fotos.png" alt="фото")
+                                    .text.card-text Особливе замовлення
+                                    .price 250 грн.*
+                                    .text.fn Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші. 
+                .row.card-buttom
+                    .col-6 
+                        .fn * - зверніть увагу, зміна ціни може <br> залежати від курсу долара.
+                    .col-6    
+                        a.all_plan(href="#") дивитись усі плани 
+                        img.little-arrow(src="img/ellipse.png" alt="коло")
+                .py-5.row.island 
+                    .col-4
+                        img.islands(src="img/island.png" alt="острів") 
+                    .col-8 
+                        .card_one Дивовижний безлюдний острів, який зводить людей з розуму
+                        .row 
+                            .col-7
+                                .text.sub-title Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі. 
+                                .button.but(type="button" class="btn btn-primary btn-sm") ЗАМОВИТИ ТУР
+                                .button.but-detal(type="button" class="btn btn-outline-primary") ДЕТАЛЬНІШЕ
+                            .col-5.py-4.day
+                                .price 575 грн./день
+                                .text.fn.text-center В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
+        .wave.content.conteiner-fluid
+            .container
+                .row
+                    .col-7.my-5 
+                        h3 СПІЙМАЙ ХВИЛЮ 
+                        h4 ЖИВИ ЯСКРАВО!
+                        .py-3.text-like Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвідчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
+                        <br>
+                        .my-5.button.but(type="button" class="btn btn-primary btn-sm") ДЕТАЛЬНІШЕ 
+                    .col-5.my-5 
+                        img.quotes.my-5(src="img/quotes.png" alt="лапки")
+                        .text.white.pb-1.text-left Чудова туристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють спражні професіонали своєї справи.  
+                        .author Олег Набережний
+                        .client клієнт
+                        img.oleg(src="img/oleg.png" alt="Олег")
+        .content.conteiner-fluid
+            .container
+                h2.pt-5 СПЕЦІАЛЬНІ ПРОПОЗИЦІЇ ТИЖНЯ
+                .text.dark.text-center Гарячі пропозиції, по-швидше обирай і поїхали!
+            .content.conteiner-fluid
+                .container       
+                    .row.mb-5.stick
+                        .col-3.pb-5
+                            div.card_two.card_star
+                                img.layer_one(src="img/layer_one.png" alt="слой1")
+                                .px-2.text-left.pt-3.text Романтична подорож на 2
+                                .px-2.text.fn Подорож у найромантичніші куточки світу, занурить вас у дивовижні пейзажі природи.
+                                .px-2.price-bottom 2599 грн.
+                                img.a.order_ellipse(src="img/order_ellipse.png" alt="слой4")
+                        .col-3.pb-5
+                            div.card_two_cyc.card_two.card_star
+                                img.layer_two(src="img/layer_two.png" alt="слой2")
+                                img.blue-cycling(src="img/blue-cycling.png" alt="велосипедист")
+                                .px-2.text-left.pt-3.text Велотур
+                                .px-2.text.fn Бажаєте прокататись з вітерцем, та ще й з критим краєвидом довкола? Тоді швидше замовляй велотур!
+                                .px-2.price-bottom 555 грн.
+                                img.a.order_ellipse(src="img/order_ellipse.png" alt="слой4")
+                        .col-3.pb-5
+                            div.card_two.card_star
+                                img.layer_three(src="img/layer_three.png" alt="слой3")
+                                .px-2.text-left.pt-3.text На острови!
+                                .px-2.text.fn Хочеш зануритись у тишу, місце де не має натовпу, та панує дмка природа? Тоді вперед за пригодами!
+                                .px-2.price-bottom 1559 грн.
+                                img.a.order_ellipse(src="img/order_ellipse.png" alt="слой4")
+                        .col-3.pb-5
+                            div.card_two.card_star
+                                img.layer_four(src="img/layer_four.png" alt="слой4")
+                                .px-2.text-left.pt-3.text Катання на сьорфінгу 
+                                .px-2.text.fn Хочеш отримати екстрим та мега вражень одночасно? Тоді вперед ловити хвилі!
+                                .prices
+                                    .px-2.price-bottom 999 грн.
+                                    img.a.order_ellipse(src="img/order_ellipse.png" alt="слой4")
+            .content.conteiner-fluid
+                .container        
+                    .row.mt-5
+                        .col-3.my-5
+                            h2.pt-0 ДОДАТКОВА ІНФОРМАЦІЯ
+                        .col-3.my-5
+                            div.card_two.inform-hotel.px-3
+                                img.timetable(src="img/timetable.png" alt="розклад")
+                                .pt-3.ps-3.text-left.author Графік роботи <br> готелів.xls
+                                .px-2.client Розмір файла: 10Mb
+                                .py-5.text-timetable Розклад роботи усіх наших готелів, можете знайти за цим посиланням. Та додатково завантажити їх фото.
+                                .ps-4.mt-1.button.but-yellow(type="button" class="btn btn-outline-warning") СКАЧАТИ
+                        .col-3.my-5
+                             div.card_two.inform-eat.px-3
+                                img.timetable(src="img/timetable.png" alt="розклад")
+                                .pt-3.ps-3.text-left.author Інформація про харчування.xls
+                                .px-2.client Розмір файла: 10Mb
+                                .pt-5.pb-4.text-timetable У будь-якому нашому турі включені сніданки у вартість. Якщо ж бажаєте замовити додотково, то ознайомтесь з умовами.
+                                .ps-4.mt-2.button.but-yellow(type="button" class="btn btn-outline-warning") СКАЧАТИ
+                        .col-3.my-5
+                            .rec
+                                .px-2.text-center.text  задати питання
+                                .text.fn.text-center.px-4 Скажіть доброго дня нашому консультанту, і ми з радістю відповімо на Ваші запитання
+                                a.tel(href="#") +38 (050) 56 98 511
+                                .px-2.pt-3.text-center.text Анна Миколаївна
+                                .client консультант
+                                img.anna(src="img/anna.png" alt="Анна")
+                                .div.rectangle-three  
+                                .div.rectangle-four
+        .py-5.foot
+        .adres.py-3 © 2016 Cars.com All rights reserved.
+    script(src="js/scripts.js") 
+    
+
+    
